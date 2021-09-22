@@ -1,8 +1,8 @@
 :root { /* Färgerna från paletten*/
-    --tin: #D7D7D8;
-    --mtin: #B8B8BB;
-    --dtin: #AEAEB1;
-    --ashg: #636458;
+    --tin: #D7D7D8; /* Tin */
+    --mtin: #B8B8BB; /* Medium Tin */
+    --dtin: #AEAEB1; /* Dark Tin */
+    --ashg: #636458; /* Very Light Ash Grey*/
 }
 
 body {

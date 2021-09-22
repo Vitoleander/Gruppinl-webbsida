@@ -18,6 +18,7 @@ nav {
     align-items: center;
     position: fixed;
     background-color: black;
+    /* Skriv in ifall vi ska ha en transparant navbar--> opacity: 0.7;*/
     font-weight: bold;
     top: 0;
 }

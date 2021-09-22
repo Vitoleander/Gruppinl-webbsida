@@ -1,0 +1,53 @@
+:root { /* Färgerna från paletten*/
+    --tin: #D7D7D8; /* Tin */
+    --mtin: #B8B8BB; /* Medium Tin */
+    --dtin: #AEAEB1; /* Dark Tin */
+    --ashg: #636458; /* Very Light Ash Grey*/
+}
+
+body {
+    margin: 0;
+    background: white;
+    font-family: Helvetica, sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    align-items: center;
+    position: fixed;
+    background-color: black;
+    font-weight: bold;
+    top: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    padding: 1em;
+}
+
+nav ul li a {
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    border: 1px solid black;
+    text-decoration: none;
+    text-align: center;
+    margin: 2em;
+    transition: all 0.8 ease;
+}
+
+nav ul li a:hover { 
+    background-color: black;
+    color: white;
+}
+
+nav ul li.active a{
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+}
+
+

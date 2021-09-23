@@ -1,3 +1,5 @@
+
+
 :root { /* Färgerna från paletten*/
     --tin: #D7D7D8; /* Tin */
     --mtin: #B8B8BB; /* Medium Tin */
@@ -49,5 +51,104 @@ nav ul li.active a{
     color: white;
     border: 1px solid white;
 }
+
+main{
+    height: 300px;
+}
+
+/* Yuns kod */
+.footer{
+    background-color: black;
+    color: var(--tin);
+    padding: 50px 0px 30px 0px;
+	display: flex;
+	flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+ul{
+	list-style: none;
+    padding: 0px;
+    text-align: center;
+}
+
+.footerbox{
+   width: 25%;
+   box-sizing: border-box;
+   text-align: center;
+}
+
+.footerbox h4{
+	font-size: 18px;
+    color: var(--tin);
+	text-transform: capitalize;
+    
+}
+
+.social-links {
+    text-align: center;
+}
+
+.footerbox .social-links a{
+	display: inline-block;
+	height: 30px;
+	width: 30px;
+	background-color: var(--ashg);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 30px;
+	border-radius: 50%;
+	color: var(--tin);
+	transition: all 0.5s ease;
+}
+.footerbox .social-links a:hover{
+	color: var(--ashg);
+	background-color: var(--tin);
+}
+
+  .email-box i{
+    background: var(--ashg);
+    width: 30px;
+    line-height: 30px;
+  }
+  .tbox,.btn{
+    border: none;
+    outline: none;
+  }
+  
+  .tbox{
+    width: 0px;
+    transition: 0.6s;
+    padding: 0;
+    height: 30px;
+  }
+  .email-box:hover > .tbox,.tbox:focus{
+    width: 150px;
+    padding: 0 10px;
+  }
+  .btn{
+    background: var(--ashg);
+    color:var(--tin);
+    padding: 0 10px;
+    text-transform: uppercase;
+  }
+
+  button{
+    height: 30px;
+  }
+  
+@media(max-width: 960px){
+  .footerbox{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 768px){
+  .footerbox{
+    width: 100%;
+}
+}
+
+
 
 

@@ -53,7 +53,7 @@ nav ul li.active a{
 }
 
 main{
-    height: 300px;
+    height: auto;
 
 }
 
@@ -130,7 +130,7 @@ ul{
   .btn{
     background: var(--ashg);
     color:var(--tin);
-    padding: 0 10px;
+    padding: 0px 10px;
     text-transform: uppercase;
   }
 

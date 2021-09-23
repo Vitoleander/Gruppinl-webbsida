@@ -1,3 +1,20 @@
+:root { /* Färgerna från paletten*/
+    --tin: #D7D7D8; /* Tin */
+    --mtin: #B8B8BB; /* Medium Tin */
+    --dtin: #AEAEB1; /* Dark Tin */
+    --ashg: #636458; /* Very Light Ash Grey*/
+}
+
 main{
-    background-color: blue;
+    background-color:var(--tin);
+    padding: 100px;
+}
+
+.image{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+img{
+    size: 50%;
 }

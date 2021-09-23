@@ -53,7 +53,7 @@ nav ul li.active a{
 }
 
 main{
-    height: auto;
+    height: 300px;
 
 }
 
@@ -109,8 +109,7 @@ ul{
 
   .email-box i{
     background: var(--ashg);
-    width: 30px;
-    line-height: 30px;
+    padding: 6px 7px 8px 7px;
   }
   .tbox,.btn{
     border: none;

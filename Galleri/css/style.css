@@ -53,40 +53,39 @@ nav ul li.active a{
 }
 
 main{
-    height: 300px;
+    height: auto;
 }
 
-/* Yuns kod */
 .footer{
-    background-color: black;
-    color: var(--tin);
-    padding: 50px 0px 30px 0px;
-	display: flex;
-	flex-wrap: wrap;
-    justify-content: space-around;
+  background-color: black;
+  color: var(--tin);
+  padding: 50px 0px 30px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 ul{
 	list-style: none;
-    padding: 0px;
-    text-align: center;
+  padding: 0px;
+  text-align: center;
 }
 
 .footerbox{
-   width: 25%;
-   box-sizing: border-box;
-   text-align: center;
+  width: 25%;
+  box-sizing: border-box;
+  text-align: center;
 }
 
 .footerbox h4{
 	font-size: 18px;
-    color: var(--tin);
+  color: var(--tin);
 	text-transform: capitalize;
     
 }
 
 .social-links {
-    text-align: center;
+  text-align: center;
 }
 
 .footerbox .social-links a{
@@ -106,47 +105,57 @@ ul{
 	background-color: var(--tin);
 }
 
-  .email-box i{
-    background: var(--ashg);
-    width: 30px;
-    line-height: 30px;
-  }
-  .tbox,.btn{
-    border: none;
-    outline: none;
-  }
-  
-  .tbox{
-    width: 0px;
-    transition: 0.6s;
-    padding: 0;
-    height: 30px;
-  }
-  .email-box:hover > .tbox,.tbox:focus{
-    width: 150px;
-    padding: 0 10px;
-  }
-  .btn{
-    background: var(--ashg);
-    color:var(--tin);
-    padding: 0 10px;
-    text-transform: uppercase;
-  }
+.email-box{
+  height: 30px;
+  justify-content: center;
+  display: flex;
+}
 
-  button{
-    height: 30px;
-  }
+.email-box i{
+  background: var(--ashg);
+  width: 30px;
+  line-height: 30px;
+}
+
+.tbox,.btn{
+  border: none;
+  outline: none;
+}
+  
+.tbox{
+  width: 0px;
+  transition: 0.6s;
+  padding: 0;
+  height: 30px;
+}
+
+.email-box:hover > .tbox,.tbox:focus{
+  width: 150px;
+  padding: 0 10px;
+}
+
+.btn{
+  background: var(--ashg);
+  color:var(--tin);
+  padding: 0 10px;
+  text-transform: uppercase;
+}
+
+button{
+  height: 30px;
+}
   
 @media(max-width: 960px){
   .footerbox{
     width: 50%;
     margin-bottom: 30px;
+  }
 }
-}
+
 @media(max-width: 768px){
   .footerbox{
     width: 100%;
-}
+  }
 }
 
 

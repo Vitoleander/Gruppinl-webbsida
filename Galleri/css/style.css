@@ -9,7 +9,7 @@
 
 body {
     margin: 0;
-    background: white;
+    background:var(--tin);
     font-family: Helvetica, sans-serif;
 }
 

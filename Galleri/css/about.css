@@ -6,7 +6,7 @@
 }
 
 body { 
-    background-image: linear-gradient(rgba(36,35,35,0.5),rgba(36, 35, 35, 0.5)), url('/Galleri/img/bg.jpg');
+    background-color: var(--tin);
     background-size: cover;
     background-position: center;
     background-repeat: none;
@@ -74,9 +74,10 @@ section{
 .container{
     margin-top: 0px;
     height: calc(50px - 50px);
-    border: 1px solid white;
+    border: 1px solid black;
     height: 20vh;
     box-shadow: 2px var(--dtin);
+    color: black;
 }
 
 .container h1{
@@ -128,7 +129,7 @@ section{
     font-size: 1em;
     font-weight: bold;
     opacity: 0;
-    transition: opacity 0.5s;
+    transition: opacity 0.8s;
     
 }
 
@@ -156,7 +157,7 @@ section{
     font-size: 1em;
     font-weight: bold;
     opacity: 0;
-    transition: opacity 0.5s;
+    transition: opacity 0.8s;
     
 }
 
@@ -185,7 +186,7 @@ section{
     font-size: 1em;
     font-weight: bold;
     opacity: 0;
-    transition: opacity 0.5s;
+    transition: opacity 0.8s;
 }
 
 .t3hover:hover {

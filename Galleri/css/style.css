@@ -5,6 +5,7 @@
     --mtin: #B8B8BB; /* Medium Tin */
     --dtin: #AEAEB1; /* Dark Tin */
     --ashg: #636458; /* Very Light Ash Grey*/
+    --ashb: #252525; /* Very Ash Black */
 }
 
 body {
@@ -215,7 +216,7 @@ p {
   }
 
 .footer{
-  background-color: black;
+  background-color: var(--ashb);
   color: var(--tin);
   padding: 50px 0px 30px 0px;
   display: flex;

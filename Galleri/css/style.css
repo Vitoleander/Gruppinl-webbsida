@@ -1,4 +1,16 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+body {
+  background:var(--tin);
+  background-size: cover;
+  background-repeat: none;
+  font-family: Helvetica, sans-serif;
+  color: white;
+}
 
 :root { /* Färgerna från paletten*/
     --tin: #D7D7D8; /* Tin */
@@ -8,55 +20,113 @@
     --ashb: #252525; /* Very Ash Black */
 }
 
-body {
-    margin: 0;
-    background:var(--tin);
-    font-family: Helvetica, sans-serif;
+nav {
+  background: #252525;
+  height: 80px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 100;
 }
 
-nav {
-    display: flex;
-    justify-content: center;
-    width: 100vw;
-    align-items: center;
-    position: fixed;
-    background-color: black;
-    font-weight: bold;
-    top: 0;
-    z-index: 100;
+label.logo {
+  float: left;
+  color: white;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
 }
 
 nav ul {
-    list-style: none;
-    display: flex;
-    padding: 1em;
+  float: left;
+  margin-left: 5vw;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
 }
 
 nav ul li a {
-    background-color: white;
-    color: black;
-    padding: 10px 20px;
-    border: 1px solid black;
-    text-decoration: none;
-    text-align: center;
-    margin: 2em;
-    transition: all 0.8 ease;
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
 }
 
-nav ul li a:hover { 
-    background-color: black;
-    color: white;
+a.active, a:hover {
+  background: var(--dtin);
+  color: white;
+  transition: .5s;
 }
 
-nav ul li.active a{
-    background-color: black;
-    color: white;
-    border: 1px solid white;
+.checkbtn {
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
 }
 
+#check {
+  display: none;
+}
+
+@media (max-width: 960px) {
+  .checkbtn {
+      display: block;
+  }
+  label.logo {
+      font-size: 30px;
+      padding-left: 50px;
+  }
+  nav ul li a{
+      font-size: 16px;
+      border: 5px solid white;
+  }
+}
+@media (max-width: 768px) {
+  .checkbtn {
+      display: block;
+  }
+  ul {
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: var(--ashg);
+      top: 80px;
+      left:-110%;
+      text-align: center;
+      transition: all .5s;
+  }
+  nav ul li {
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+  }
+  nav ul li a{
+      font-size: 20px;
+  }
+  a:hover, a.active {
+      background: var(--dtin);
+      color: white;
+  }
+  #check:checked ~ ul {
+      left: 0;
+  }
+}
 
 main{
   height: auto;
+}
+
+.media-img {
+  display: none;
 }
 
 .media {
@@ -69,12 +139,14 @@ h1 {
   font-weight: bold;
   font-size: 3rem;
   margin-bottom: 0;
+  color: var(--ashb);
 }
 
 p {
   text-align: center;
   font-weight: bold;
   margin-top: 2rem;
+  color: var(--ashb);
 }
 
 #slider {

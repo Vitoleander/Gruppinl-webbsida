@@ -125,6 +125,10 @@ main{
   height: auto;
 }
 
+.media-img {
+  display: none;
+}
+
 .media {
   margin-top: 20vh;
   margin-bottom: 20vh;

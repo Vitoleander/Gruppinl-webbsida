@@ -5,28 +5,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-content">
     <title>Gallery webpage</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 
 </head>
 
 <body>
-    <!-- Ifall en logga ska finnas på navbar, så läggs den in här -->
-    <!--<img src="pic\logga.png" alt="logo" class="logo"> -->
-
-    <nav>
-        <ul> <!-- Glöm inte att ändra active så det blir på rätt sida. class="active" -->
-            <li><a href="/Galleri/index.html" class="active">Home</a></li>
-            <li><a href="pages/gallery.html">Gallery</a></li>
-            <li><a href="/Galleri/pages/about.html">About</a></li>
+   
+<header>
+   <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+         <i class="fas fa-bars"></i></label>
+      <label class="logo">GALLERY JNY</label>
+         <ul>
+            <li><a class="active" href="/index.html">Home</a></li>
+            <li><a href="/pages/gallery.html">Gallery</a></li>
+            <li><a href="/pages/about.html">About</a></li>
             <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
+         </ul>
+        </nav>
+</header>
 
     <section>
         <div class="media">
-            <h1>Gallery Strandvägen</h1>
-            <p>Vivamus ullamcorper, odio sed porta ornare, neque ex facilisis nibh, quis condimentum turpis purus quis risus. </p>
+            <h1>New art exhibition</h1>
             <div id="slider">
                 <input type="radio" name="slider" id="slide1" checked>
                 <input type="radio" name="slider" id="slide2">
@@ -38,25 +41,25 @@
                          <div class="slide slide_1">
                             <div class="slide-content">
                                <h2>Slide 1</h2>
-                               <img src="/Galleri/pic/1.jpeg">
+                               <img src="/pic/1.jpeg">
                             </div>
                          </div>
                          <div class="slide slide_2">
                             <div class="slide-content">
                                <h2>Slide 2</h2>
-                               <img src="/Galleri/pic/2.jpeg">
+                               <img src="/pic/2.jpeg">
                             </div>
                          </div>
                          <div class="slide slide_3">
                             <div class="slide-content">
                                <h2>Slide 3</h2>
-                               <img src="/Galleri/pic/3.jpeg">
+                               <img src="/pic/3.jpeg">
                             </div>
                          </div>
                          <div class="slide slide_4">
                             <div class="slide-content">
                                <h2>Slide 4</h2>
-                               <img src="/Galleri/pic/4.jpeg">
+                               <img src="/pic/4.jpeg">
                             </div>
                          </div>
                       </div>
@@ -75,6 +78,7 @@
                    <label for="slide4"></label>
                 </div>
              </div>
+             <p>Vivamus ullamcorper, odio sed porta ornare, neque ex facilisis nibh, quis condimentum turpis purus quis risus. </p>
              </div>
     </section>
 </body>

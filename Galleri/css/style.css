@@ -1,16 +1,4 @@
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
-body {
-  background:var(--tin);
-  background-size: cover;
-  background-repeat: none;
-  font-family: Helvetica, sans-serif;
-  color: white;
-}
 
 :root { /* Färgerna från paletten*/
     --tin: #D7D7D8; /* Tin */

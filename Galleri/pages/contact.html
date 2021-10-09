@@ -11,74 +11,90 @@
 
 </head>
 
-<header>
-    <nav>
-       <input type="checkbox" id="check">
-       <label for="check" class="checkbtn">
-          <i class="fas fa-bars"></i></label>
-       <label class="logo">GALLERY JNY</label>
-          <ul>
-             <li><a href="../index.html">Home</a></li>
-             <li><a href="gallery.html">Gallery</a></li>
-             <li><a href="about.html">About</a></li>
-             <li><a class="active" href="contact.html">Contact</a></li>
-          </ul>
-         </nav> 
- </header>
-
 <body>
-    <div class="contact-form">
-        <div class="first-container">
-            <div class="info">
-                <div>
-                    <h3>Address</h3>
-                    <p>Strandvägen 1, 114 51 Stockholm, Sweden</p>
-                </div>
+    <!--Johanna-->
+    <header>
+        <nav>
+           <input type="checkbox" id="check">
+           <label for="check" class="checkbtn">
+              <i class="fas fa-bars"></i></label>
+           <label class="logo">GALLERY JNY</label>
+              <ul>
+                 <li><a href="../index.html">Home</a></li>
+                 <li><a href="gallery.html">Gallery</a></li>
+                 <li><a href="about.html">About</a></li>
+                 <li><a class="active" href="contact.html">Contact</a></li>
+              </ul>
+        </nav> 
+    </header>
 
-                <div>
-                    <h3>Lets talk</h3>
-                    <p>+468-102 102 99</p>
-                </div>
-
-                <div>
-                    <h3>E-mail adress</h3>
-                    <p>info@jny.com</p>
-                </div>
-            </div>
+    <!--Nadine-->
+    <div class="container">
+        <div class="container-left">
+            <img class="contact-pic" src="../pic/contact-pic.jpg" alt="contact-pic">
         </div>
-
-        <div class="sec-container">
-            <h2>Send Us A Message</h2>
-            <form>
-                <div class="form-group">
-                    <label>Tell us your name</label>
-                    <input type="text" name="firstname" placeholder="First Name">
-                    <input type="text" name="lastname" placeholder="Last Name">
-                </div>
-
-                <div class="form-group">
-                    <label>Enter Your Email</label>
-                    <input type="text" name="email" placeholder="youremail@email.com">
-                </div>
-
-                <div class="form-group">
-                    <label>Enter Your Phonenumber</label>
-                    <input type="text" name="phone" placeholder="+1 800 000000">
-                </div>
-
-                <div class="form-group">
-                    <label>Message</label>
-                    <textarea name="msg" placeholder="Write Us A Message"></textarea>
-                </div>
-
-                <button>Send Message</button>
-
+        <div class="container-right">
+            <form class="contact-form">
+                <h3 class="contact-header">Contact Us</h3>
+                <label class="contact-label" for="name">Name</label>
+                <input class="contact-input" type="text" id="name" name="first-and-last-name" placeholder="First and Last Name">
+            
+                <label class="contact-label for="email">E-mail</label>
+                <input class="contact-input" type="text" id="email" name="e-mail" placeholder="E-mail">
+            
+                <label class="contact-label for="message">Message</label>
+            
+                <textarea class="contact-input" id="message" name="message" placeholder="Your Message"></textarea>
+            
+                <input class="contact-submit" type="submit" value="Send">
             </form>
         </div>
-
     </div>
 
+    <!--Yun-->
+    <footer>
+        <div class="footer">
+    
+           <div class="footerbox">
+               <h4>Contact</h4>
+                   <ul>
+                       <li>08-10210299</li>
+                       <li>jny@gmail.com</li>
+                   </ul>
+           </div>
+    
+           <div class="footerbox">
+               <h4>Find us</h4>
+                   <ul>
+                       <li>Strandvägen 1</li>
+                       <li>114 51 Stockholm</li>
+                   </ul>
+           </div>
+    
+           <div class="footerbox">
+               <h4>Social media</h4>
+               <div class="social-links">
+                       <a href="#"><i class="fab fa-instagram"></i></a>
+                       <a href="#"><i class="fab fa-facebook-f"></i></a>
+                </div>
+           
+            </div>
+    
+           <div class="footerbox">
+               <h4>News letter</h4>
+               <div class="email-box">
+                   <i class="fas fa-envelope"></i>
+                   <input class="tbox" type="email" name="" value="" placeholder="Enter your email">
+                   <button class="btn" type="button" name="button">Subscribe</button>
+               </div>
+           </div>
+           <p>Copyright &copy; 2021 </p>
+       </div>
+       
+    </footer>
     
           
 </body>
+
+
 </html>

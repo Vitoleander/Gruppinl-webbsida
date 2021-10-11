@@ -18,8 +18,6 @@ body, html {
     height: 100%;
 }
 
-/* Navbar Johanna */
-
 nav {
     background: #252525;
     height: 80px;
@@ -120,8 +118,6 @@ nav {
     }
   }
 
-  /* Contact section Nadine*/
-
   .container {
     background: var(--tin);
     display: grid;
@@ -184,7 +180,7 @@ nav {
     height: 100px;
 }
 
-.contact-submit {
+.button {
     margin: 19px 0px;
     height: 45px;
     font-size: 20px;
@@ -193,9 +189,6 @@ nav {
     color: white;
     }
 
-
-
-  /* Footer Yun */
 
   .footer{
     background-color:var(--ashb);
